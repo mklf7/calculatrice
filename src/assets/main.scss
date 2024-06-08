@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif ;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 20px;
+    .contenu-calc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        padding: 20px 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 5px rgb(149, 149, 149);
+        background-color: rgb(150, 150, 150);
+        .corps-calc{
+            .champs{
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 5px;
+                box-shadow: inset 1px 1px 3px 1px rgb(0, 0, 0);
+                background:  rgb(218, 217, 217);
+                input{
+                    border: none;
+                    color: black;
+                    text-align: end;
+                    outline: none;
+                    font-size: 17px;
+                    width: 210px;
+                    background-color: transparent;
+                    &::placeholder{
+                        color: black;
+                    }
+                }
+                .reponse{
+                    height: 20px;
+                    text-align: end;
+                }
+            }
+            
+            .contenu-button{
+                margin-left: 6.8px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                button{
+                    margin-bottom: 2px;
+                    font-size: 17px;
+                    border-radius: 3px;
+                }
+                .contenu-button-haut{
+                    .supplementaires:first-child{
+                        width: 40px;
+                        margin-right: 2px;
+                        padding-bottom: 2px;
+                        background-color: rgb(95, 95, 95);
+                        color: white;
+                    }
+                    .supplementaires:not(:first-child){
+                        padding-bottom: 3px;
+                        width: 40px;
+                        margin-right: 2px;
+                        background-color: rgb(95, 95, 95);
+                        color: white;
+                    }
+                }
+                .contenu-button-bas{
+                    display: flex;
+                    width: 100%;
+                    gap: 1;
+                    .partie-gauche{
+                        justify-content: center;
+                        .valeurs{
+                            width: 50px;
+                            margin-right: 5px;
+                            background-color: rgb(213, 211, 211);
+                        }
+                        .pi{
+                            background-color: rgb(95, 95, 95);
+                            color: white;
+                            width: 30px;
+                            margin-left: 1px;
+                        }
+                        .esc{
+                            width: 60px;
+                            background-color: rgb(179, 179, 67);
+                            margin-left: 5px;
+                        }
+                        .delete{
+                            width: 60px;
+                            background-color: rgb(211, 70, 70);
+                            margin-left: 4px;
+                        }
+                        .resultat{
+                            width: 50px;
+                            margin-right: 2px;
+                            background-color: rgb(213, 211, 211);
+                        }
+                    }
+                    .partie-droite{
+                        margin-left: -20px;
+                        .operateurs{
+                            width: 40px;
+                            margin-right: 2px;
+                            background-color: rgb(95, 95, 95);
+                            color: white;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+        
+    }
+}
